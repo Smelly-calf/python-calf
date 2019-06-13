@@ -1,0 +1,19 @@
+#!/Users/wangqian/python_envs/douban_reptile/bin/python
+
+import os
+
+join = os.path.join
+base = os.path.dirname(os.path.abspath(os.path.realpath(__file__)))
+base = os.path.dirname(base)
+
+import sys
+sys.path[0:0] = [
+  join(base, 'eggs/zdaemon-4.3-py3.7.egg'),
+  join(base, 'eggs/ZConfig-3.4.0-py3.7.egg'),
+  '/Users/wangqian/python_envs/douban_reptile/lib/python3.7/site-packages',
+  ]
+
+import zdaemon.zdctl
+
+if __name__ == '__main__':
+    sys.exit(zdaemon.zdctl.main())

@@ -1,0 +1,12 @@
+------
+2019-06-13T15:03:17 INFO root daemonizing the process
+------
+2019-06-13T15:03:17 INFO root set current directory: '/Users/wangqian/python_envs/douban_reptile/DoubanReptile/parts/server'
+------
+2019-06-13T15:03:17 INFO root daemon manager started
+------
+2019-06-13T15:03:17 INFO root spawned process pid=67319
+------
+2019-06-13T15:03:35 INFO root pid 67319: terminated by SIGTERM
+------
+2019-06-13T15:03:35 INFO root Exiting
