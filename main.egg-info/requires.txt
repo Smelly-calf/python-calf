@@ -1,3 +1,7 @@
 bobo
 six
 bs4
+jieba
+pandas
+numpy
+ipython
