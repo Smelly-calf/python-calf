@@ -24,9 +24,11 @@ class DouBanSpider(object):
         nowplaying_movie_list = nowplaying_movie[0].find_all('li', class_='list-item')
 
         nowplaying_list = []
+        # get all list-item's id and name
         for item in nowplaying_movie_list:
             nowplaying_dict = {}
             nowplaying_dict['id'] = item['data-subject']
+            # get 'alt' tags as name from all tags of img
             for tag_img_item in item.find_all('img'):
                 nowplaying_dict['name'] = tag_img_item['alt']
                 nowplaying_list.append(nowplaying_dict)
