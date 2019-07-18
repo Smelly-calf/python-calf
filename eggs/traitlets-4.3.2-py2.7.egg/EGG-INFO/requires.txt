@@ -1,0 +1,8 @@
+decorator
+enum34
+ipython-genutils
+six
+
+[test]
+mock
+pytest

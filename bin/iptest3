@@ -1,0 +1,30 @@
+#!/Users/wangqian/python_envs/douban_reptile/bin/python
+
+import os
+
+join = os.path.join
+base = os.path.dirname(os.path.abspath(os.path.realpath(__file__)))
+base = os.path.dirname(base)
+
+import sys
+sys.path[0:0] = [
+  join(base, 'eggs/ipython-5.1.0-py3.7.egg'),
+  join(base, 'eggs/traitlets-4.3.2-py3.7.egg'),
+  join(base, 'eggs/simplegeneric-0.8.1-py3.7.egg'),
+  join(base, 'eggs/Pygments-2.4.2-py3.7.egg'),
+  join(base, 'eggs/prompt_toolkit-1.0.16-py3.7.egg'),
+  join(base, 'eggs/pickleshare-0.7.5-py3.7.egg'),
+  join(base, 'eggs/pexpect-4.7.0-py3.7.egg'),
+  join(base, 'eggs/decorator-4.4.0-py3.7.egg'),
+  join(base, 'eggs/appnope-0.1.0-py3.7.egg'),
+  join(base, 'eggs/ipython_genutils-0.2.0-py3.7.egg'),
+  join(base, 'eggs/wcwidth-0.1.7-py3.7.egg'),
+  join(base, 'eggs/ptyprocess-0.6.0-py3.7.egg'),
+  '/Users/wangqian/python_envs/douban_reptile/lib/python3.7/site-packages',
+  join(base, 'gen-py'),
+  ]
+
+import IPython.testing.iptestcontroller
+
+if __name__ == '__main__':
+    sys.exit(IPython.testing.iptestcontroller.main())

@@ -1,0 +1,3 @@
+[console_scripts]
+douban_spider = douban_reptile.movie_review.clean_data:main
+
