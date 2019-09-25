@@ -1,6 +1,11 @@
 README.md
 setup.py
 douban_reptile/__init__.py
+douban_reptile/BinaryTree/__init__.py
+douban_reptile/BinaryTree/binarySearchTree.py
+douban_reptile/BinaryTree/inorderTraversal.py
+douban_reptile/basic/__init__.py
+douban_reptile/basic/test_str.py
 douban_reptile/google_driver/__init__.py
 douban_reptile/google_driver/gspreadsheet.py
 douban_reptile/movie_review/__init__.py
