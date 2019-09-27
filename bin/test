@@ -1,0 +1,27 @@
+#!/Users/wangqian/python_envs/douban_reptile/bin/python
+
+import sys
+sys.path[0:0] = [
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/ipython-5.1.0-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/coverage-4.5.4-py3.7-macosx-10.7-x86_64.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/nose-1.3.7-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/traitlets-4.3.2-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/simplegeneric-0.8.1-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/Pygments-2.4.2-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/prompt_toolkit-1.0.16-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/pickleshare-0.7.5-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/pexpect-4.7.0-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/decorator-4.4.0-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/appnope-0.1.0-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/ipython_genutils-0.2.0-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/wcwidth-0.1.7-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/eggs/ptyprocess-0.6.0-py3.7.egg',
+  '/Users/wangqian/python_envs/douban_reptile/lib/python3.7/site-packages',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/gen-bazaar/gen-py',
+  '/Users/wangqian/python_envs/douban_reptile/python_calf/gen-paid-resource/gen-py',
+  ]
+
+import nose
+
+if __name__ == '__main__':
+    sys.exit(nose.main(argv=['nose', '-vd']+sys.argv[1:]))

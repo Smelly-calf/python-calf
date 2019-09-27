@@ -26,7 +26,7 @@ import os
 import re
 
 # 项目根路径
-path = os.path.abspath('..')
+this_path = os.path.abspath('..')
 
 # word_cnt 定义为全局变量
 word_cnt = {}
@@ -72,7 +72,7 @@ def io_and_parse():
     :return:
     """
     # 输入：读取文件: r只读模式
-    with open(path + '/resource/in.txt', 'r') as fin:
+    with open(this_path + '/resource/in.txt', 'r') as fin:
         try:
             # 输入：read_line
             text = fin.read()  # 优化：用 readLine 方法
@@ -83,7 +83,7 @@ def io_and_parse():
 
     # 输出：写出 w 只写模式
     # 1、按行写出
-    with open(path + '/resource/out.txt', 'w') as fou:
+    with open(this_path + '/resource/out.txt', 'w') as fou:
         for word, freq in word_and_freq.items():
             try:
                 fou.write('{}:{}\n'.format(word, freq))
@@ -91,7 +91,7 @@ def io_and_parse():
                 logging.error(e.message)
 
     # 2、json.dump 序列化
-    with open(path + '/resource/out.txt', 'w') as fou:
+    with open(this_path + '/resource/out.txt', 'w') as fou:
         try:
             json.dump(word_and_freq, fou)  # 使用json序列化
         except Exception as e:
@@ -103,7 +103,7 @@ def io_and_parse_2():
     """
     进阶版：使用 readline 方法
     """
-    with open(path + '/resource/in.txt', 'r') as fin:
+    with open(this_path + '/resource/in.txt', 'r') as fin:
         try:
             # 每次处理一行
             for line in fin:
@@ -112,7 +112,7 @@ def io_and_parse_2():
             logging.error(e)
             return
 
-    with open(path + '/resource/out.txt', 'w') as fou:
+    with open(this_path + '/resource/out.txt', 'w') as fou:
         try:
             # 按词频从大到小排序
             sorted_word_cnt = sorted(word_cnt.items(), key=lambda x: -x[1])
