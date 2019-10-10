@@ -18,9 +18,9 @@ Future对象：asyncio.gather(**协程函数) 返回 Future对象
 """
 import asyncio
 
-async def crawl_page(url):
-    print('crawling {}'.format(url))
-    sleep_time = int(url.split('_')[-1])
-    await asyncio.sleep(sleep_time)
-    print('Ok {}'.format(url))
+# async def crawl_page(url):
+#     print('crawling {}'.format(url))
+#     sleep_time = int(url.split('_')[-1])
+#     await asyncio.sleep(sleep_time)
+#     print('Ok {}'.format(url))
 
