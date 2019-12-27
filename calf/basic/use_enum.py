@@ -21,3 +21,7 @@ if __name__ == '__main__':
     print(day1.value == Weekday.Sun)  # False
     print(day1.value == Weekday.Sun.value)  # True
 
+    print(Weekday.Sun)
+    print(Weekday.Sun.name)
+    print(Weekday.Sun.value)
+
